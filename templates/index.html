@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to use Django</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000059;
+            color: white;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 900px;
+            height: auto;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(173, 216, 230, 0.8); /* Background color with opacity */
+            border-radius: 10px;
+            position: relative;
+            z-index: 1; /* Ensure the container stays on top */
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: black;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 48px; /* Increased font size */
+            font-weight: bold; /* Bold font weight */
+        }
+        
+        .about-me {
+            margin-bottom: 40px;
+            font-family: Georgia, serif;
+        }
+        
+        .about-me p {
+            color: white;
+        }
+        
+        .options {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .option {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        
+        .option:hover {
+            background-color: navy; /* Change color on hover */
+        }
+        
+        .about-me a {
+            color: dimgray; /* Grey color for "Read more" */
+            text-decoration: none;
+        }
+        
+        .about-me a:hover {
+            color: white; /* Change color on hover */
+        }
+        
+        .circle {
+            position: random;
+            border-radius: 50%;
+            z-index: -1; /* Push the circles behind the container */
+        }
+        
+        .circle-1 {
+            width: 800px;
+            height: 800px;
+            top: 400px;
+            left: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 70%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Personal Website</h1>
+        </header>
+        
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hi! I am Yaminee. This is my Project attempt of implementing Django. <a href="about.html">Read more</a></p>
+        </section>
+
+        <section class="options">
+            <a href="Login" class="option">Login</a>
+            <a href="Signup" class="option">Signup</a>
+        </section>
+    </div>
+</body>
+</html>
